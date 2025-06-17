@@ -1,0 +1,164 @@
+{
+  "name": "ep-ai",
+  "version": "0.1.0",
+  "description": "EP-Ai - ElektroPlan AI: Revolutionary AR planning tool for electricians",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios", 
+    "web": "expo start --web",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build:android": "expo build:android",
+    "build:ios": "expo build:ios",
+    "publish": "expo publish",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "expo": "~49.0.0",
+    "react": "18.2.0",
+    "react-native": "0.72.6",
+    
+    "@react-navigation/native": "^6.1.7",
+    "@react-navigation/stack": "^6.3.17", 
+    "@react-navigation/bottom-tabs": "^6.5.8",
+    "react-native-screens": "~3.22.0",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-gesture-handler": "~2.12.0",
+    
+    "expo-camera": "~13.4.2",
+    "expo-gl": "~12.4.0",
+    "expo-gl-cpp": "~11.4.0",
+    "expo-three": "^6.2.0",
+    "three": "^0.127.0",
+    
+    "expo-linear-gradient": "~12.3.0",
+    "expo-blur": "~12.4.1",
+    "expo-haptics": "~12.4.0",
+    "expo-permissions": "~14.2.1",
+    
+    "expo-file-system": "~15.4.3",
+    "expo-document-picker": "~11.5.4", 
+    "expo-sharing": "~11.5.0",
+    "expo-print": "~12.4.0",
+    
+    "react-native-pdf": "^6.7.3",
+    "react-native-svg": "13.9.0",
+    "react-native-vector-icons": "^10.0.0",
+    
+    "@react-native-async-storage/async-storage": "1.18.2",
+    "react-native-uuid": "^2.0.1",
+    
+    "react-native-reanimated": "~3.3.0",
+    "react-native-redash": "^18.1.2",
+    
+    "expo-constants": "~14.4.2",
+    "expo-device": "~5.4.0",
+    "expo-notifications": "~0.20.1",
+    
+    "react-hook-form": "^7.45.4",
+    "yup": "^1.3.2",
+    
+    "date-fns": "^2.30.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    
+    "jest": "^29.2.1",
+    "jest-expo": "~49.0.0",
+    "@testing-library/react-native": "^12.3.0",
+    "@testing-library/jest-native": "^5.4.3",
+    
+    "eslint": "^8.45.0",
+    "eslint-config-expo": "^7.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-native": "^4.1.0",
+    
+    "prettier": "^3.0.0",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    
+    "metro-config": "^0.76.0",
+    
+    "@types/jest": "^29.5.0",
+    "@types/lodash": "^4.14.0",
+    "@types/three": "^0.155.0"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/**/*.test.{js,jsx}",
+      "!src/**/index.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "expo",
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "rules": {
+      "react/prop-types": "off",
+      "react-native/no-unused-styles": "warn",
+      "react-native/split-platform-components": "warn"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  },
+  "private": true,
+  "license": "PROPRIETARY",
+  "author": {
+    "name": "VolMax Studio",
+    "email": "contact@volmax-studio.com",
+    "url": "https://volmax-studio.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VolMax-Studio/EP-Ai.git"
+  },
+  "keywords": [
+    "react-native",
+    "expo", 
+    "augmented-reality",
+    "ar",
+    "artificial-intelligence",
+    "ai",
+    "electrical",
+    "electrician",
+    "construction",
+    "mobile-app",
+    "planning-tool",
+    "cost-calculator",
+    "serbia",
+    "volmax-studio"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
