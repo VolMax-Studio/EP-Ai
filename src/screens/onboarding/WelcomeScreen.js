@@ -15,6 +15,7 @@ import {
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import VolMaxLogo from '../../components/common/VolMaxLogo';
 
 const { width, height } = Dimensions.get('window');
 
@@ -62,7 +63,11 @@ export default function WelcomeScreen({ navigation }) {
             }
           ]}
         >
-          <Text style={styles.brandText}>VolMax Studio</Text>
+          <VolMaxLogo 
+            variant="default"
+            size="medium"
+            showText={true}
+          />
           <View style={styles.brandLine} />
           <Text style={styles.brandSubtext}>Professional Development</Text>
         </Animated.View>
